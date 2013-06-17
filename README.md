@@ -16,4 +16,4 @@ $puppet apply --modulepath=/root/modules/ -e "include java"
 ```
 
 Note: For puppet apply, modules should be located inside modules dir with name as include name:
-      Ex: mkdir -p /root/modules && mv puppet_java /root/modules/java
+      Ex: `mkdir -p /root/modules && mv puppet_java /root/modules/java`
