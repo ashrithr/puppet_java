@@ -12,6 +12,8 @@ include java
 Using with puppet apply (given module lives in /root/modules):
 
 ```
+$cd ~ && mkdir modules
+$cd ~/modules && git clone https://github.com/ashrithr/puppet_java.git java
 $puppet apply --modulepath=/root/modules/ -e "include java"
 ```
 
