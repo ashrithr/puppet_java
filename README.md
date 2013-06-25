@@ -23,5 +23,5 @@ Note: For puppet apply, modules should be located inside modules dir with name a
 To install puppet:
 
 ```
-wget -qO - https://raw.github.com/ashrithr/scripts/master/install_puppet_standalone.sh | bash -i
+wget -qO - https://raw.github.com/ashrithr/scripts/master/install_puppet_standalone.sh | bash
 ```
