@@ -69,12 +69,14 @@ class java {
     group   => root,
     require	=>	File["java-app-dir"],
   }
-
+  
+  #FIX: This causes java to source every time
   exec { "source-java":
     command	=> "/etc/profile.d/set_java_home.sh | sh",
     user    => 'root',
     group   => 'root',
     logoutput => 'true',
+    onlyif => 'test -z $JAVA_HOME', #run only if this command returns 0 
     require	=>	File ["/etc/profile.d/set_java_home.sh"],
   }
 }
