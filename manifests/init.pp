@@ -76,7 +76,7 @@ class java {
     user    => 'root',
     group   => 'root',
     logoutput => 'true',
-    onlyif => 'test -z $JAVA_HOME', #run only if this command returns 0 
+    onlyif => '/usr/bin/test -z $JAVA_HOME', #run only if this command returns 0 
     require	=>	File ["/etc/profile.d/set_java_home.sh"],
   }
 }
